@@ -1,4 +1,4 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Neumím ZPC'
-theme = "ananke"
+theme = "Ananke"
