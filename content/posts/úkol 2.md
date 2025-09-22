@@ -1,12 +1,11 @@
 ---
-date: 2025-09-22T14:36:24+02:00
+date: 2025-09-22T14:36:37+02:00
 # description: ""
 # image: ""
 lastmod: 2025-09-22
 showTableOfContents: false
 # tags: ["",]
-title: "My Second Post"
+title: "Úkol č. 2"
 type: "post"
 ---
-### Hello People
-Bim Bam Bum
+## Miniprojekt Mikrokontroler
