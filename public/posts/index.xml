@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kokotina kterou musím udělat</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on Kokotina kterou musím udělat</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finální projekt</title>
+      <link>https://example.org/posts/finalni-projekt/</link>
+      <pubDate>Mon, 22 Sep 2025 14:36:37 +0200</pubDate>
+      <guid>https://example.org/posts/finalni-projekt/</guid>
+      <description>&lt;h1 id=&#34;rc-letadlo&#34;&gt;RC letadlo&lt;/h1&gt;&#xA;&lt;p&gt;Cílem tohoto projektu je vytvořit funkční RC letadlo za účelem tréninku pro jiné RC modely. Vztlak bude produkovat za pomoci konvenčního křídla a je žádoucí, aby byla zachována co nejmenší hmotnost.&lt;/p&gt;&#xA;&lt;h2 id=&#34;časový-plán&#34;&gt;Časový plán&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;22.09.-28.09.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pochopení programu XFLR5 a vytvoření základního modelu&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;29.09.-05.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Získání veškerých podkladů ke zjištění rozměrů ocasních a kontrolních ploch&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;06.10.-12.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Iterace modelu v XFLR5, výpočet stability&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;13.10.-19.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vytvoření 3D modelu letadla&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;20.10.-26.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vytvoření souborů pro výrobu (3D tisk/laserové řezání)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;27.10.-02.11.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>O mně</title>
+      <link>https://example.org/posts/o-mn%C4%9B/</link>
+      <pubDate>Mon, 22 Sep 2025 14:36:37 +0200</pubDate>
+      <guid>https://example.org/posts/o-mn%C4%9B/</guid>
+      <description>&lt;p&gt;Jsem student Fakulty strojního inženýrství VUT v Brně a studuji druhým rokem bakalářský studijní program Konstrukční inženýrství. Dále jsem ve studentském spolku Chicken Wings zabývajícím se designem a výrobou RC letadel na mezinárodní soutěže.&#xA;&lt;img src=&#34;https://example.org/images/fotka.jpg&#34; alt=&#34;Jan Káfoněk&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Úkol č. 2</title>
+      <link>https://example.org/posts/%C3%BAkol-2/</link>
+      <pubDate>Mon, 22 Sep 2025 14:36:37 +0200</pubDate>
+      <guid>https://example.org/posts/%C3%BAkol-2/</guid>
+      <description>&lt;h2 id=&#34;miniprojekt-mikrokontroler&#34;&gt;Miniprojekt Mikrokontroler&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Úkol č.3</title>
+      <link>https://example.org/posts/%C3%BAkol3/</link>
+      <pubDate>Mon, 22 Sep 2025 14:36:24 +0200</pubDate>
+      <guid>https://example.org/posts/%C3%BAkol3/</guid>
+      <description>&lt;h2 id=&#34;miniprojekt-řezání&#34;&gt;Miniprojekt Řezání&lt;/h2&gt;&#xA;&lt;p&gt;Bim Bam Bum&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Úkol č.4</title>
+      <link>https://example.org/posts/%C3%BAkol4/</link>
+      <pubDate>Mon, 22 Sep 2025 14:36:11 +0200</pubDate>
+      <guid>https://example.org/posts/%C3%BAkol4/</guid>
+      <description>&lt;h2 id=&#34;miniprojekt-3d-skenování&#34;&gt;Miniprojekt 3D skenování&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Úkol č.5</title>
+      <link>https://example.org/posts/%C3%BAkol5/</link>
+      <pubDate>Mon, 22 Sep 2025 14:35:55 +0200</pubDate>
+      <guid>https://example.org/posts/%C3%BAkol5/</guid>
+      <description>&lt;h2 id=&#34;miniprojekt-3d-tisk&#34;&gt;Miniprojekt 3D tisk&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
