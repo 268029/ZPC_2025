@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="site-title">
+      <a href="/">{{ .Site.Title }}</a>
+      <img src="/images/catpog.webp" alt="Cat" style="width:40px; height:auto; margin-left:1rem; vertical-align:middle; position:relative; top:5px;">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        {{ $current := .RelPermalink }}
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}" {{ if eq .URL $current }}class="active"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Miniprojekt elektro · Jak vyrobit téměř cokoliv</title>
+    <meta name="description" content="Tato stránka slouží jako portfólio pro předmět ZPC na fakultě strojního inženýrství VUT.">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="wrap header-inner">
+    <div class="site-title">
+      <a href="/">Jak vyrobit téměř cokoliv</a>
+      <img src="/images/catpog.webp" alt="Cat" style="width:40px; height:auto; margin-left:1rem; vertical-align:middle; position:relative; top:5px;">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        
+        
+          <li><a href="/" >Home</a></li>
+        
+          <li><a href="/projects/" >Projects</a></li>
+        
+          <li><a href="/about/" >About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+    <main id="content">
+      
+  <article class="wrap">
+    <header class="post-header">
+      <h1>Miniprojekt elektro</h1>
+    </header>
+    <div class="post-content">
+      <p>Úkolem tohoto miniprojektu bylo vytvořit buďto obvod fyzický, nebo jeho simulaci v tinkercadu za použití Arduino UNO. Já jsem si pro svůj miniprojekt připravil simulaci semaforu.</p>
+<h2 id="popis">Popis</h2>
+<p>Jedná se o semafor u přechodu pro chodce, tudíž řídíme 2 semafory současně, jeden ze 3 žárovek, druhý ze 2. Je žádoucí, aby v běžném provozu byla zelená na semaforu pro silniční dopravu a červená pro chodce, po stisknutí aktivačního tlačítka pak chceme opak. Nemůžeme také ihned po stisknutí tlačítka změnit řád, neboť při velkém objemu chodců by se tvořila kolona. Taktéž musíme mít prodlevu pro bezpečné přecházení chodců, kteří vstoupili na přechod ke konci jejich vyhrazeného času.</p>
+<figure style="text-align:center; margin: .5rem 0 1rem;">
+	<img src="/images/elektroschema.jpg" alt="Schéma obvodu" style="width:50%; height:auto; border-radius:6px;" />
+	<figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Schéma obvodu</figcaption>
+</figure>
+<h2 id="kód">Kód</h2>
+<p>Celé programování jsem tvořil za pomoci bloků, které ačkoliv nejsou &ldquo;standardní&rdquo; ani příliš efektivní, jsou přehledné a jednoduché na pochopení pro člověka, který nemá s programováním zkušenosti.</p>
+<figure style="text-align:center; margin: .5rem 0 1rem;">
+	<img src="/images/elektrokod.jpg" alt="Kód obvodu" style="width:50%; height:auto; border-radius:6px;" />
+	<figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Kód obvodu</figcaption>
+</figure>
+    </div>
+  </article>
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="wrap">
+    <p>
+      &copy; 2025 Jan Káfoněk.
+      <img src="/images/cat-pilot.gif" alt="Animation" style="width:80px; vertical-align:middle; margin-left:10px;">
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="wrap">
+      <h1>{{ .Site.Title }}</h1>
+      <p>{{ with .Site.Params.description }}{{ . }}{{ else }}Welcome to my portfolio.{{ end }}</p>
+      {{ .Content }}
+    </div>
+  </section>
+  {{/* Featured project (if any) */}}
+  {{ $featured := first 1 (where .Site.RegularPages "Params.featured" true) }}
+  {{ if gt (len $featured) 0 }}
+    {{ $p := index $featured 0 }}
+    <section class="featured wrap">
+      <h2>Featured Project</h2>
+      <article class="featured-project">
+        <a href="{{ $p.RelPermalink }}">
+          {{ with $p.Params.image }}<img class="featured-image" src="{{ . }}" alt="{{ $p.Title }} thumbnail">{{ end }}
+          <div class="featured-content">
+            <h3>{{ $p.Title }}</h3>
+            <p>{{ with $p.Params.description }}{{ . }}{{ end }}</p>
+          </div>
+        </a>
+      </article>
+    </section>
+  {{ end }}
+
+  <section class="projects wrap">
+    <h2>Selected Projects</h2>
+    <ul class="project-list">
+      {{ range where .Site.RegularPages "Section" "projects" }}
+        <li class="project-item">
+          <a href="{{ .RelPermalink }}">
+            <h3>{{ .Title }}</h3>
+            <p>{{ with .Params.description }}{{ . }}{{ end }}</p>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

@@ -1,0 +1,28 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Jak vyrobit téměř cokoliv'
+
+# Allow raw HTML in markdown files
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Site params for the portfolio
+[params]
+	author = 'Jan Káfoněk'
+	description = 'Tato stránka slouží jako portfólio pro předmět ZPC na fakultě strojního inženýrství VUT.'
+
+[menu]
+	[[menu.main]]
+		name = 'Home'
+		url = '/'
+		weight = 1
+	[[menu.main]]
+		name = 'Projects'
+		url = '/projects/'
+		weight = 2
+	[[menu.main]]
+		name = 'About'
+		url = '/about/'
+		weight = 3

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssg on Jak vyrobit téměř cokoliv</title>
+    <link>https://example.org/tags/ssg/</link>
+    <description>Recent content in Ssg on Jak vyrobit téměř cokoliv</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/ssg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Miniprojekt laserové řezání</title>
+      <link>https://example.org/projects/project4/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/project4/</guid>
+      <description>&lt;p&gt;Úkolem tohoto miniprojektu bylo vytvořit sestavu vyrobenou z kartonu na laserové řezačce dostupné ve StrojLabu konstruování. V celé sestavě nesmí být použito lepidlo ani jiné adhezivní prvky, tudíž jediná možnost spojů jsou vyřezané zámky.&lt;/p&gt;&#xA;&lt;p&gt;Mým návrhem pro tento projekt bylo jednoduché letadlo. Jedná se o &amp;ldquo;těžítko&amp;rdquo;, které není určené k letu, neboť není uzpůsobeno pro let, jedná se pouze o statickou ukázku.&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;https://example.org/images/laserminiprojekt.jpg&#34; alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34; style=&#34;width:50%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;Model vytvořený v Autodesk AutoCAD&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Po vytvoření podkladů pro laser jsem se mohl vrhnout na výrobu dílů, které budu následně spojovat.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

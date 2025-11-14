@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Semestrální projekt · Jak vyrobit téměř cokoliv</title>
+    <meta name="description" content="Tato stránka slouží jako portfólio pro předmět ZPC na fakultě strojního inženýrství VUT.">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="wrap header-inner">
+    <div class="site-title">
+      <a href="/">Jak vyrobit téměř cokoliv</a>
+      <img src="/images/catpog.webp" alt="Cat" style="width:40px; height:auto; margin-left:1rem; vertical-align:middle; position:relative; top:5px;">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        
+        
+          <li><a href="/" >Home</a></li>
+        
+          <li><a href="/projects/" >Projects</a></li>
+        
+          <li><a href="/about/" >About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+    <main id="content">
+      
+  <article class="wrap">
+    <header class="post-header">
+      <h1>Semestrální projekt</h1>
+    </header>
+    <div class="post-content">
+      <p>Semestrální práce spočívá v návrhu a výrobě RC letadla pro výcvik na jiná letadla.</p>
+<h2 id="průběh-práce">Průběh práce</h2>
+<ul>
+<li>Responsive design</li>
+<li>Accessible controls</li>
+<li>Clean, minimal UI</li>
+</ul>
+<h2 id="časový-plán">Časový plán</h2>
+<p><strong>22.09.-28.09.</strong></p>
+<ul>
+<li>Pochopení programu XFLR5 a vytvoření základního modelu</li>
+</ul>
+<p><strong>29.09.-05.10.</strong></p>
+<ul>
+<li>Získání veškerých podkladů ke zjištění rozměrů ocasních a kontrolních ploch</li>
+</ul>
+<p><strong>06.10.-12.10.</strong></p>
+<ul>
+<li>Iterace modelu v XFLR5, výpočet stability</li>
+</ul>
+<p><strong>13.10.-19.10.</strong></p>
+<ul>
+<li>Vytvoření 3D modelu letadla</li>
+</ul>
+<p><strong>20.10.-26.10.</strong></p>
+<ul>
+<li>Vytvoření souborů pro výrobu (3D tisk/laserové řezání)</li>
+</ul>
+<p><strong>27.10.-02.11.</strong></p>
+<ul>
+<li>Nákup a výroba potřebných dílů</li>
+</ul>
+<p><strong>03.11.-09.11.</strong></p>
+<ul>
+<li>Výroba dílů</li>
+</ul>
+<p><strong>10.11.-16.11.</strong></p>
+<ul>
+<li>Sestavení konstrukce</li>
+</ul>
+<p><strong>17.11.-23.11.</strong></p>
+<ul>
+<li>Instalace elektroniky</li>
+</ul>
+<p><strong>24.11.-30.11.</strong></p>
+<ul>
+<li>Prostor pro řešení problémů/odladění</li>
+</ul>
+<p><strong>1.12.-7.12.</strong></p>
+<ul>
+<li>Prostor pro řešení problémů/odladění</li>
+</ul>
+<p><strong>Průběh práce 22.09.-29.09.</strong></p>
+<p>Vytvořil jsem prvotní model s profilem NACA 2415 a rozpětím 1000 mm jako základ, který budu iterovat. Rozpětí jsem volil dle předešlých zkušeností v týmu chickenwings jako kompromis mezi letovými vlastnostmi a náročností výroby. Profil NACA 2415 jsem volil po rešerši a jedná se o běžně využívaný profil pro RC letadla. Dále jsem vytvořil tabulku s výpočty pro potřebnou rychlost ke vzletu.</p>
+<h3 id="model-pro-aerodynamickou-analýzu">Model pro aerodynamickou analýzu</h3>
+<p><img src="/images/XFLR_layout_1.0.png" alt="XFLR layout"></p>
+<h3 id="použitý-profil-naca-2415">Použitý profil NACA 2415</h3>
+<p><img src="/images/NACA2415_profil.jpg" alt="Profil NACA"></p>
+<h3 id="vstupní-hodnoty-prostředí-a-křídla">Vstupní hodnoty prostředí a křídla</h3>
+<p><img src="/images/Vstupn%C3%AD_data_excel.jpg" alt="Excel vstup"></p>
+<h3 id="výstup-vztlaková-síla">Výstup (vztlaková síla)</h3>
+<p><img src="/images/V%C3%BDstup_excel.jpg" alt="Excel výstup"></p>
+<h3 id="graf-celkové-vztlakové-síly">Graf celkové vztlakové síly</h3>
+<p><img src="/images/Vztlakov%C3%A1_s%C3%ADla_graf.jpg" alt="Vztlaková síla graf"></p>
+<h3 id="rozložení-vztlaku-na-křídle">Rozložení vztlaku na křídle</h3>
+<p><img src="/images/Rozlo%C5%BEen%C3%AD_vztlaku.jpg" alt="Vztlaková síla graf"></p>
+<p><strong>Průběh práce 30.09.-05.10.</strong></p>
+<p>Po zjištění, že budu potřebovat hmotnosti jednotlivých komponent v softwaru XFLR5, jsem začal modelovat křídlo v programu Autodesk Inventor</p>
+<p>Dále jsem se rozhodl navýšit rozpětí křídla na 1,5m ke zlepšení letových vlastností. K tomuto závěru mne vedly výpočty vzletové rychlosti, která byla pro letadlo určené k tréninku až příliš vysoká.</p>
+<p>Po konzultaci se studenty leteckého ústavu jsem došel k závěru, že ačkoliv můj způsob výpočtu parametrů by byl dostatečný, rozhodně nebyl ideální, proto jsem se rozhodl se vrátit ke koncepčnímu návrhu, tentokrát s optimálním postupem.
+Začal jsem novým výpočtem pro plochu křídla, po úpravě vzorce pro vztlakovou sílu lze získat hodnota plochy křídla, pro zadané požadavky. Mé odhady a požadavky byly:</p>
+<ul>
+<li>Pádová rychlost 8 m/s</li>
+<li>Vzletová váha 1,5 kg</li>
+<li>Odhadované Clmax 1,25</li>
+</ul>
+<p>Došel jsem k závěru, že v ideálním stavu by postačovala plocha křídla 0,3 m čtverečných, vzhledem k nezapočteným ztrátám a nepřesnosti při výrobě jsem zvolil plochu o něco vyšší. Za předpokladu, že jako kompromis mezi indukovaným odporem a konstrukční a výrobní složitostí jsem volil rozpětí křídla 1,5m, vyšla mi délka tětivy 0,22 m.</p>
+<h3 id="analýza-v-xflr">Analýza v XFLR</h3>
+<p>Pro samotnou analýzu jsem vybral dva profily</p>
+<ul>
+<li>Pro křídlo NACA 2415</li>
+<li>Pro ocasní plochy NACA 0014</li>
+</ul>
+<p>S těmito profily jsem nadále prováděl výpočty.
+Prvním krokem bylo profily &ldquo;virtuálně ofoukat&rdquo; a dostat tím data o jejich charakteristikách při různých reynoldsových číslech.</p>
+<p>Dále jsem analyzoval při jaké kombinaci úhlu náběhu a rychlosti je letadlo schopné horizontálního letu. Poté jsem řešil při jakém úhlu náběhu má letadlo ideální poměr Koeficientu vztlaku ke koeficientu odporu, to ve zkratce znamená, jak efektivní let bude při daném úhlu náběhu. Podle těchto dat jsem křídlo &ldquo;natočil&rdquo; už v konstrukci.
+Jako poslední bod, který jsem řešil u polár, byl klopivý moment, který křídlo vyvolá, ten jsem se snažil balancovat co nejblíže k nule při nulovém úhlu náběhu, vyrovnává se ocasními plochami a pozicí těžiště, ale je nutné brát v potaz mohutnost ocasních ploch (poměr ploch a ramen vůči křídlu)</p>
+<h1 id="časový-plán-1">Časový plán</h1>
+<h2 id="22092809--pochopení-programu-xflr5-a-vytvoření-základního-modelu">22.09.–28.09. – Pochopení programu XFLR5 a vytvoření základního modelu</h2>
+<p><strong>Plán:</strong><br>
+Pochopení principů programu XFLR5, vytvoření základního modelu pro analýzu aerodynamiky.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+Vytvořil jsem prvotní model s profilem NACA 2415 a rozpětím 1000 mm jako základ, který budu iterovat. Rozpětí jsem volil dle předešlých zkušeností v týmu chickenwings jako kompromis mezi letovými vlastnostmi a náročností výroby. Profil NACA 2415 jsem volil po rešerši a jedná se o běžně využívaný profil pro RC letadla. Dále jsem vytvořil tabulku s výpočty pro potřebnou rychlost ke vzletu.</p>
+<hr>
+<h2 id="29090510--získání-podkladů-pro-rozměry-ocasních-a-kontrolních-ploch">29.09.–05.10. – Získání podkladů pro rozměry ocasních a kontrolních ploch</h2>
+<p><strong>Plán:</strong><br>
+Získání všech potřebných údajů k určení rozměrů ocasních a kontrolních ploch.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+Po zjištění, že budu potřebovat hmotnosti jednotlivých komponent v softwaru XFLR5, jsem začal modelovat křídlo v programu Autodesk Inventor</p>
+<p>Dále jsem se rozhodl navýšit rozpětí křídla na 1,5m ke zlepšení letových vlastností. K tomuto závěru mne vedly výpočty vzletové rychlosti, která byla pro letadlo určené k tréninku až příliš vysoká.</p>
+<p>Po konzultaci se studenty leteckého ústavu jsem došel k závěru, že ačkoliv můj způsob výpočtu parametrů by byl dostatečný, rozhodně nebyl ideální, proto jsem se rozhodl se vrátit ke koncepčnímu návrhu, tentokrát s optimálním postupem. Začal jsem novým výpočtem pro plochu křídla, po úpravě vzorce pro vztlakovou sílu lze získat hodnota plochy křídla, pro zadané požadavky. Mé odhady a požadavky byly:</p>
+<ul>
+<li>Pádová rychlost 8 m/s</li>
+<li>Vzletová váha 1,5 kg</li>
+<li>Odhadované Clmax 1,25</li>
+</ul>
+<p>Došel jsem k závěru, že v ideálním stavu by postačovala plocha křídla 0,3 m čtverečných, vzhledem k nezapočteným ztrátám a nepřesnosti při výrobě jsem zvolil plochu o něco vyšší. Za předpokladu, že jako kompromis mezi indukovaným odporem a konstrukční a výrobní složitostí jsem volil rozpětí křídla 1,5m, vyšla mi délka tětivy 0,22 m.</p>
+<p><strong>Analýza v XFLR</strong></p>
+<p>Pro samotnou analýzu jsem vybral dva profily</p>
+<p>Pro křídlo NACA 2415
+Pro ocasní plochy NACA 0014
+S těmito profily jsem nadále prováděl výpočty. Prvním krokem bylo profily “virtuálně ofoukat” a dostat tím data o jejich charakteristikách při různých reynoldsových číslech.</p>
+<p>Dále jsem analyzoval při jaké kombinaci úhlu náběhu a rychlosti je letadlo schopné horizontálního letu. Poté jsem řešil při jakém úhlu náběhu má letadlo ideální poměr Koeficientu vztlaku ke koeficientu odporu, to ve zkratce znamená, jak efektivní let bude při daném úhlu náběhu. Podle těchto dat jsem křídlo “natočil” už v konstrukci. Jako poslední bod, který jsem řešil u polár, byl klopivý moment, který křídlo vyvolá, ten jsem se snažil balancovat co nejblíže k nule při nulovém úhlu náběhu, vyrovnává se ocasními plochami a pozicí těžiště, ale je nutné brát v potaz mohutnost ocasních ploch (poměr ploch a ramen vůči křídlu)</p>
+<hr>
+<h2 id="06101210--iterace-modelu-v-xflr5-výpočet-stability">06.10.–12.10. – Iterace modelu v XFLR5, výpočet stability</h2>
+<p><strong>Plán:</strong><br>
+Provést úpravy a iterace modelu v XFLR5, vypočítat statickou a dynamickou stabilitu.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+Iterace modelu probíhaly převážně v upřesnění hmotností pro výpočet stability, musel jsem tedy vytvářet 3D model dříve, než bylo plánované, abych dostal dostatečně přesný odhad hmotnosti, aby pro mě byly výsledky analýzy relevantní. Hlavní polárou, která mne v tuto chvíli zajímala, byl graf klopivého momentu vůči úhlu náběhu.</p>
+<hr>
+<h2 id="13101910--vytvoření-3d-modelu-letadla">13.10.–19.10. – Vytvoření 3D modelu letadla</h2>
+<p><strong>Plán:</strong><br>
+Zpracování kompletního 3D modelu letadla podle výsledků z XFLR5.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+Jak jsem avizoval v poznatcích z minulého týdne, základní model jsem již vytvořil, nyní bylo podstatné vše zkompletovat do finální podoby, celý model jsem tvořil z 1,5 mm letecké překližky, 3 mm balsy, uhlíkových trubek a 3D tisknutých přechodů.</p>
+<p><strong>Technické specifikace modelu</strong></p>
+<ul>
+<li>Váha:</li>
+<li>Délka vrtule-ocas:</li>
+<li>Rozpětí křídla:</li>
+<li>Rozpětí horizontálních ocasních ploch:</li>
+<li>Počet nosníků v trupu:</li>
+<li>Počet přepážek v trupu:</li>
+<li>Počet balsových žeber:</li>
+<li>Počet žeber z překližky:</li>
+</ul>
+<hr>
+<h2 id="20102610--příprava-výrobní-dokumentace">20.10.–26.10. – Příprava výrobní dokumentace</h2>
+<p><strong>Plán:</strong><br>
+Vytvoření souborů pro výrobu – 3D tisk a laserové řezání.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+Hlavní pracovním úkonem pro tento týden, bylo vytvořit podklady pro laser na vyřezání všech dílů z balsy a překližky, to vše bylo provedeno a zbývalo vytvořit G-kód pro 3D tiskárnu na přechody motor-trup a ocas-trup, což jsem přesunul na další týden vzhledem k faktu, že budu tisknout další součásti do miniprojektu 3D tisk.</p>
+<hr>
+<h2 id="27100211--nákup-a-výroba-potřebných-dílů">27.10.–02.11. – Nákup a výroba potřebných dílů</h2>
+<p><strong>Plán:</strong><br>
+Zajištění všech komponent a zahájení výroby jednotlivých částí.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+Vzhledem k faktu, že jsem si během vytváření modelu vše pečlivě zapisoval do excelové tabulky, nalezení zboží u dostupných výrobců a následná objednávka byla jednoduchým krokem.</p>
+<hr>
+<h2 id="03110911--výroba-dílů">03.11.–09.11. – Výroba dílů</h2>
+<p><strong>Plán:</strong><br>
+Dokončení výroby všech dílů pro sestavení konstrukce.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+<em>(doplnit)</em></p>
+<hr>
+<h2 id="10111611--sestavení-konstrukce">10.11.–16.11. – Sestavení konstrukce</h2>
+<p><strong>Plán:</strong><br>
+Montáž konstrukčních částí do celku.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+<em>(doplnit)</em></p>
+<hr>
+<h2 id="17112311--instalace-elektroniky">17.11.–23.11. – Instalace elektroniky</h2>
+<p><strong>Plán:</strong><br>
+Instalace serv, pohonného systému a elektroniky řízení.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+<em>(doplnit)</em></p>
+<hr>
+<h2 id="24113011--odladění-a-řešení-problémů">24.11.–30.11. – Odladění a řešení problémů</h2>
+<p><strong>Plán:</strong><br>
+Testování, opravy a dolaďování případných problémů.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+<em>(doplnit)</em></p>
+<hr>
+<h2 id="01120712--závěrečné-ladění-a-rezervní-čas">01.12.–07.12. – Závěrečné ladění a rezervní čas</h2>
+<p><strong>Plán:</strong><br>
+Finální úpravy, příprava k testovacímu letu, časová rezerva.</p>
+<p><strong>Skutečně provedeno:</strong><br>
+<em>(doplnit)</em></p>
+
+    </div>
+  </article>
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="wrap">
+    <p>
+      &copy; 2025 Jan Káfoněk.
+      <img src="/images/cat-pilot.gif" alt="Animation" style="width:80px; vertical-align:middle; margin-left:10px;">
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
