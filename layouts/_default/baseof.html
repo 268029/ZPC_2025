@@ -14,10 +14,9 @@
 
     <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
 
-    {{!-- CSS (OPRAVENO) --}}
+    <!-- hlavní CSS – soubor static/css/styles.css -->
     <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
   </head>
-
   <body>
     {{ partial "header.html" . }}
 
