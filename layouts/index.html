@@ -6,6 +6,7 @@
       {{ .Content }}
     </div>
   </section>
+
   {{/* Featured project (if any) */}}
   {{ $featured := first 1 (where .Site.RegularPages "Params.featured" true) }}
   {{ if gt (len $featured) 0 }}
@@ -14,7 +15,11 @@
       <h2>Featured Project</h2>
       <article class="featured-project">
         <a href="{{ $p.RelPermalink }}">
-          {{ with $p.Params.image }}<img class="featured-image" src="{{ . }}" alt="{{ $p.Title }} thumbnail">{{ end }}
+          {{ with $p.Params.image }}
+            <img class="featured-image"
+                 src="{{ . | relURL }}"
+                 alt="{{ $p.Title }} thumbnail">
+          {{ end }}
           <div class="featured-content">
             <h3>{{ $p.Title }}</h3>
             <p>{{ with $p.Params.description }}{{ . }}{{ end }}</p>
