@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spa on Jak vyrobit téměř cokoliv</title>
-    <link>https://example.org/tags/spa/</link>
+    <link>https://268029.github.io/ZPC_2025/tags/spa/</link>
     <description>Recent content in Spa on Jak vyrobit téměř cokoliv</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/spa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://268029.github.io/ZPC_2025/tags/spa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Miniprojekt plotter</title>
-      <link>https://example.org/projects/project3/</link>
+      <link>https://268029.github.io/ZPC_2025/projects/project3/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/project3/</guid>
-      <description>&lt;p&gt;Úkol spočíval ve vložení ručně kresleného obrázku do programu inkscape, kde byl upraven do formátu vektorové grafiky, ta byla následně exportována do plotteru a vyřezána.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ruční-kresba&#34;&gt;Ruční kresba&lt;/h2&gt;&#xA;&lt;p&gt;Celý nákres jsem vytvořil tužkou a následně fixou obtáhl, volil jsem jednoduchý spojitý tvar.&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;https://example.org/images/39nakres.jpg&#34; alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34; style=&#34;width:35%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;Ruční kresba&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;h2 id=&#34;import-do-inkscape&#34;&gt;Import do inkscape&lt;/h2&gt;&#xA;&lt;p&gt;Za pomocí funkcí programu jsem vyfocený nákres naimportoval do InkScape a upravil vektorovou grafiku tak, aby odpovídala požadovanému tvaru, po dokončení těchto úprav jsem se dále rozhodl přidat další prvek, kterým je číslo 39 uprostřed nálepky symbolizující označení letadla JAS-39.&lt;/p&gt;</description>
+      <guid>https://268029.github.io/ZPC_2025/projects/project3/</guid>
+      <description>&lt;p&gt;Úkol spočíval ve vložení ručně kresleného obrázku do programu inkscape, kde byl upraven do formátu vektorové grafiky, ta byla následně exportována do plotteru a vyřezána.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ruční-kresba&#34;&gt;Ruční kresba&lt;/h2&gt;&#xA;&lt;p&gt;Celý nákres jsem vytvořil tužkou a následně fixou obtáhl, volil jsem jednoduchý spojitý tvar.&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;https://268029.github.io/ZPC_2025/images/39nakres.jpg&#34; alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34; style=&#34;width:35%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;Ruční kresba&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;h2 id=&#34;import-do-inkscape&#34;&gt;Import do inkscape&lt;/h2&gt;&#xA;&lt;p&gt;Za pomocí funkcí programu jsem vyfocený nákres naimportoval do InkScape a upravil vektorovou grafiku tak, aby odpovídala požadovanému tvaru, po dokončení těchto úprav jsem se dále rozhodl přidat další prvek, kterým je číslo 39 uprostřed nálepky symbolizující označení letadla JAS-39.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

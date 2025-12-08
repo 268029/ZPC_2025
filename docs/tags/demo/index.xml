@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demo on Jak vyrobit téměř cokoliv</title>
+    <link>http://localhost:1313/ZPC_2025/tags/demo/</link>
+    <description>Recent content in Demo on Jak vyrobit téměř cokoliv</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ZPC_2025/tags/demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Semestrální projekt</title>
+      <link>http://localhost:1313/ZPC_2025/projects/project1/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZPC_2025/projects/project1/</guid>
+      <description>&lt;p&gt;Semestrální práce spočívá v návrhu a výrobě RC letadla pro výcvik na jiná letadla.&lt;/p&gt;&#xA;&lt;h2 id=&#34;průběh-práce&#34;&gt;Průběh práce&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Responsive design&lt;/li&gt;&#xA;&lt;li&gt;Accessible controls&lt;/li&gt;&#xA;&lt;li&gt;Clean, minimal UI&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;časový-plán&#34;&gt;Časový plán&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;22.09.-28.09.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pochopení programu XFLR5 a vytvoření základního modelu&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;29.09.-05.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Získání veškerých podkladů ke zjištění rozměrů ocasních a kontrolních ploch&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;06.10.-12.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Iterace modelu v XFLR5, výpočet stability&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;13.10.-19.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vytvoření 3D modelu letadla&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;20.10.-26.10.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vytvoření souborů pro výrobu (3D tisk/laserové řezání)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;27.10.-02.11.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Nákup a výroba potřebných dílů&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;03.11.-09.11.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
