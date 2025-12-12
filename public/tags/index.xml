@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jak vyrobit téměř cokoliv</title>
-    <link>https://268029.github.io/ZPC_2025/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Jak vyrobit téměř cokoliv</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://268029.github.io/ZPC_2025/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Performance</title>
-      <link>https://268029.github.io/ZPC_2025/tags/performance/</link>
+      <link>http://localhost:1313/tags/performance/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/tags/performance/</guid>
+      <guid>http://localhost:1313/tags/performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Portfolio</title>
-      <link>https://268029.github.io/ZPC_2025/tags/portfolio/</link>
+      <link>http://localhost:1313/tags/portfolio/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/tags/portfolio/</guid>
+      <guid>http://localhost:1313/tags/portfolio/</guid>
       <description></description>
     </item>
     <item>
       <title>Accessibility</title>
-      <link>https://268029.github.io/ZPC_2025/tags/accessibility/</link>
+      <link>http://localhost:1313/tags/accessibility/</link>
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/tags/accessibility/</guid>
+      <guid>http://localhost:1313/tags/accessibility/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssg</title>
-      <link>https://268029.github.io/ZPC_2025/tags/ssg/</link>
+      <link>http://localhost:1313/tags/ssg/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/tags/ssg/</guid>
+      <guid>http://localhost:1313/tags/ssg/</guid>
       <description></description>
     </item>
     <item>
       <title>Demo</title>
-      <link>https://268029.github.io/ZPC_2025/tags/demo/</link>
+      <link>http://localhost:1313/tags/demo/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/tags/demo/</guid>
+      <guid>http://localhost:1313/tags/demo/</guid>
       <description></description>
     </item>
     <item>
       <title>Spa</title>
-      <link>https://268029.github.io/ZPC_2025/tags/spa/</link>
+      <link>http://localhost:1313/tags/spa/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/tags/spa/</guid>
+      <guid>http://localhost:1313/tags/spa/</guid>
       <description></description>
     </item>
     <item>
       <title>Landing</title>
-      <link>https://268029.github.io/ZPC_2025/tags/landing/</link>
+      <link>http://localhost:1313/tags/landing/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/tags/landing/</guid>
+      <guid>http://localhost:1313/tags/landing/</guid>
       <description></description>
     </item>
   </channel>

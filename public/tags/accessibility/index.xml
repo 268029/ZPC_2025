@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accessibility on Jak vyrobit téměř cokoliv</title>
-    <link>https://268029.github.io/ZPC_2025/tags/accessibility/</link>
+    <link>http://localhost:1313/tags/accessibility/</link>
     <description>Recent content in Accessibility on Jak vyrobit téměř cokoliv</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://268029.github.io/ZPC_2025/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Miniprojekt 3D tisk</title>
-      <link>https://268029.github.io/ZPC_2025/projects/project5/</link>
+      <link>http://localhost:1313/projects/project5/</link>
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/projects/project5/</guid>
-      <description>&lt;div style=&#34;text-align:center;&#34;&gt;&#xD;&#xA;&lt;p&gt;Zadáním tohoto miniprojektu je vytvořit mechanismus s 1 stupněm volnosti obsahující minimálně jedno uložení s přesahem a jedno s vůlí. Dále bylo požadavkem, aby celá sestava spotřebovala maximálně 100g filamentu.&lt;/p&gt;&#xA;&lt;p&gt;Vzhledem k požadavkům jsem se rozhodl udělat malý klikový mechanismus s otevřeným rámem.&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;https://268029.github.io/ZPC_2025/images/miniprojekt3dmodel.jpg&#34; alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34; style=&#34;width:50%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;Model klikového mechanismu&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Po vytvoření modelu v Inventoru bylo nutné jednotlivé části sestavy přenést do sliceru a správně je orientovat.&#xA;Vzhledem k jednoduchosti dílů jsem se rozhodl nepřidávat podpory a funkční díry upravit až po tisku.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/projects/project5/</guid>
+      <description>&lt;div style=&#34;text-align:center;&#34;&gt;&#xD;&#xA;&lt;p&gt;Zadáním tohoto miniprojektu je vytvořit mechanismus s 1 stupněm volnosti obsahující minimálně jedno uložení s přesahem a jedno s vůlí. Dále bylo požadavkem, aby celá sestava spotřebovala maximálně 100g filamentu.&lt;/p&gt;&#xA;&lt;p&gt;Vzhledem k požadavkům jsem se rozhodl udělat malý klikový mechanismus s otevřeným rámem.&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;../../images/miniprojekt3dmodel.jpg&#34;&#xD;&#xA;&#x9;     alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34;&#xD;&#xA;&#x9;     style=&#34;width:50%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;&#xD;&#xA;&#x9;&#x9;Model klikového mechanismu&#xD;&#xA;&#x9;&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Po vytvoření modelu v Inventoru bylo nutné jednotlivé části sestavy přenést do sliceru a správně je orientovat.&#xA;Vzhledem k jednoduchosti dílů jsem se rozhodl nepřidávat podpory a funkční díry upravit až po tisku.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

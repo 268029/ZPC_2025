@@ -11,12 +11,6 @@ weight: 1
 
 Semestrální práce spočívá v návrhu a výrobě RC letadla pro výcvik na jiná letadla.
 
-## Průběh práce
-
-- Responsive design
-- Accessible controls
-- Clean, minimal UI
-
 ## Časový plán
 **22.09.-28.09.**
 - Pochopení programu XFLR5 a vytvoření základního modelu
@@ -218,7 +212,7 @@ Vzhledem k faktu, že jsem si během vytváření modelu vše pečlivě zapisova
 Dokončení výroby všech dílů pro sestavení konstrukce.  
 
 **Skutečně provedeno:**  
-*(doplnit)*  
+První série dílů byla vytvořena v souladu s časovým plánem, ale vzhledem k jiným akademickým povinnostem nebylo možné dovyrobit veškeré díly,  na které se přišlo při sestavení. Zde see začalo nabírat první zpoždění vůči plánu.
 
 ---
 
@@ -228,7 +222,7 @@ Dokončení výroby všech dílů pro sestavení konstrukce.
 Montáž konstrukčních částí do celku.  
 
 **Skutečně provedeno:**  
-*(doplnit)*  
+Vzhledem ke komplikacím spojené s dodáním filamentu byla konstrukce sestavena pouze po částech, (trup, křídlo, ocas) které se spojí o 3 týdny později 
 
 ---
 

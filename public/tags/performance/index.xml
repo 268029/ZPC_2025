@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Performance on Jak vyrobit téměř cokoliv</title>
-    <link>https://268029.github.io/ZPC_2025/tags/performance/</link>
+    <link>http://localhost:1313/tags/performance/</link>
     <description>Recent content in Performance on Jak vyrobit téměř cokoliv</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://268029.github.io/ZPC_2025/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Miniprojekt skenování</title>
-      <link>https://268029.github.io/ZPC_2025/projects/project6/</link>
+      <link>http://localhost:1313/projects/project6/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://268029.github.io/ZPC_2025/projects/project6/</guid>
-      <description>&lt;p&gt;Zadáním pro tento minirojekt bylo naskenovat starý telefon, který mi byl dodán a dále v programu GOM Inspect model upravit a změřit povrch, maximální rozměr a libovolný rozměr.&lt;/p&gt;&#xA;&lt;p&gt;Veškeré skenování bylo provedeno na zařízení &lt;strong&gt;SIMSCAN&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;https://268029.github.io/ZPC_2025/images/telefon.jpg&#34; alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34; style=&#34;width:35%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;Zadaný objekt ke skenování...telefon&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Pro úspěšný sken bylo nejprve nutné objekt připravit, to spočívalo v nalepení několika bodů a následné naskenování.&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;https://268029.github.io/ZPC_2025/images/telefonbody.jpg&#34; alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34; style=&#34;width:35%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;Nachystaný telefon ke skenu&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Dále následovalo samotné naskenování bodů a objektu&lt;/p&gt;</description>
+      <guid>http://localhost:1313/projects/project6/</guid>
+      <description>&lt;p&gt;Zadáním pro tento minirojekt bylo naskenovat starý telefon, který mi byl dodán a dále v programu GOM Inspect model upravit a změřit povrch, maximální rozměr a libovolný rozměr.&lt;/p&gt;&#xA;&lt;p&gt;Veškeré skenování bylo provedeno na zařízení &lt;strong&gt;SIMSCAN&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;../../images/telefon.jpg&#34;&#xD;&#xA;&#x9;     alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34;&#xD;&#xA;&#x9;     style=&#34;width:35%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;&#xD;&#xA;&#x9;&#x9;Zadaný objekt ke skenování...telefon&#xD;&#xA;&#x9;&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Pro úspěšný sken bylo nejprve nutné objekt připravit, to spočívalo v nalepení několika bodů a následné naskenování.&lt;/p&gt;&#xA;&lt;figure style=&#34;text-align:center; margin:.5rem 0 1rem;&#34;&gt;&#xD;&#xA;&#x9;&lt;img src=&#34;../../images/telefonbody.jpg&#34;&#xD;&#xA;&#x9;     alt=&#34;Ruční kresba&#34; title=&#34;Ruční kresba&#34;&#xD;&#xA;&#x9;     style=&#34;width:35%; height:auto; border-radius:4px;&#34; /&gt;&#xD;&#xA;&#x9;&lt;figcaption style=&#34;font-size:.85rem; color:var(--muted); margin-top:.25rem;&#34;&gt;&#xD;&#xA;&#x9;&#x9;Nachystaný telefon ke skenu&#xD;&#xA;&#x9;&lt;/figcaption&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Dále následovalo samotné naskenování bodů a objektu&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -13,7 +13,7 @@
     <meta name="description" content="Tato stránka slouží jako portfólio pro předmět ZPC na fakultě strojního inženýrství VUT.">
 
     
-    <link rel="stylesheet" href="/ZPC_2025/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
     <header class="site-header">
@@ -22,9 +22,7 @@
         
         <div class="site-title">
             <a href="/">Jak vyrobit téměř cokoliv</a>
-            <img src="/ZPC_2025/images/catpog.webp" 
-                 alt="Cat" 
-                 style="width: 120px;">
+
         </div>
 
         
@@ -33,21 +31,21 @@
                 
                 
                     <li>
-                        <a href="/ZPC_2025/"
+                        <a href="/"
                            >
                             Home
                         </a>
                     </li>
                 
                     <li>
-                        <a href="/ZPC_2025/projects/"
+                        <a href="/projects/"
                            >
                             Projects
                         </a>
                     </li>
                 
                     <li>
-                        <a href="/ZPC_2025/about/"
+                        <a href="/about/"
                            >
                             About
                         </a>
@@ -72,16 +70,86 @@
       <p>Úkolem tohoto miniprojektu bylo vytvořit buďto obvod fyzický, nebo jeho simulaci v tinkercadu za použití Arduino UNO. Já jsem si pro svůj miniprojekt připravil simulaci semaforu.</p>
 <h2 id="popis">Popis</h2>
 <p>Jedná se o semafor u přechodu pro chodce, tudíž řídíme 2 semafory současně, jeden ze 3 žárovek, druhý ze 2. Je žádoucí, aby v běžném provozu byla zelená na semaforu pro silniční dopravu a červená pro chodce, po stisknutí aktivačního tlačítka pak chceme opak. Nemůžeme také ihned po stisknutí tlačítka změnit řád, neboť při velkém objemu chodců by se tvořila kolona. Taktéž musíme mít prodlevu pro bezpečné přecházení chodců, kteří vstoupili na přechod ke konci jejich vyhrazeného času.</p>
-<figure style="text-align:center; margin: .5rem 0 1rem;">
-	<img src="/images/elektroschema.jpg" alt="Schéma obvodu" style="width:50%; height:auto; border-radius:6px;" />
-	<figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Schéma obvodu</figcaption>
+<figure style="text-align:center; margin:.5rem 0 1rem;">
+  <img src="../../images/elektroschema.jpg"
+       alt="Schéma obvodu"
+       style="width:50%; height:auto; border-radius:6px;">
+  <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">
+    Schéma obvodu
+  </figcaption>
 </figure>
 <h2 id="kód">Kód</h2>
 <p>Celé programování jsem tvořil za pomoci bloků, které ačkoliv nejsou &ldquo;standardní&rdquo; ani příliš efektivní, jsou přehledné a jednoduché na pochopení pro člověka, který nemá s programováním zkušenosti.</p>
-<figure style="text-align:center; margin: .5rem 0 1rem;">
-	<img src="/images/elektrokod.jpg" alt="Kód obvodu" style="width:50%; height:auto; border-radius:6px;" />
-	<figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Kód obvodu</figcaption>
+<figure style="text-align:center; margin:.5rem 0 1rem;">
+  <img src="../../images/elektrokod.jpg"
+       alt="Kód obvodu"
+       style="width:50%; height:auto; border-radius:6px;">
+  <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">
+    Kód obvodu
+  </figcaption>
 </figure>
+<h2 id="odkaz">Odkaz</h2>
+<p><a href="https://www.tinkercad.com/things/4KhDr1TIdG7-miniprojekt/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fall&amp;sharecode=LFGar4VT6F6jQ8HszpLmBcpw6cP_nLZAX2nXdheZUmk">https://www.tinkercad.com/things/4KhDr1TIdG7-miniprojekt/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fall&amp;sharecode=LFGar4VT6F6jQ8HszpLmBcpw6cP_nLZAX2nXdheZUmk</a></p>
+<h2 id="kod">Kod</h2>
+<p>// C++ code
+//
+int Aktivace = 0;</p>
+<p>void setup()
+{
+pinMode(3, OUTPUT);
+pinMode(4, OUTPUT);
+pinMode(5, OUTPUT);
+pinMode(6, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(2, INPUT);</p>
+<p>digitalWrite(3, HIGH);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, HIGH);
+// Nastavení auta zelená, chodci červená
+}</p>
+<p>void loop()
+{
+if (Aktivace == 1) {
+// Prodleva pro chodce
+delay(3000); // Wait for 3000 millisecond(s)
+digitalWrite(3, LOW);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, HIGH);
+// Auta zastavují
+delay(2000); // Wait for 2000 millisecond(s)
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, HIGH);
+digitalWrite(6, HIGH);
+digitalWrite(7, LOW);
+// Chodci přechází
+delay(5000); // Wait for 5000 millisecond(s)
+digitalWrite(3, LOW);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, HIGH);
+// Auta se rozjíždějí
+delay(2000); // Wait for 2000 millisecond(s)
+Aktivace = 0;
+} else {
+// Auta jezdí
+digitalWrite(3, HIGH);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, HIGH);
+}</p>
+<p>if (digitalRead(2) == 1) {
+Aktivace = 1;
+}
+// Aktivace přechodu
+}</p>
+
     </div>
 
   </article>
@@ -94,7 +162,7 @@
       &copy; 2025 
       Jan Káfoněk.
       
-      <img src="/ZPC_2025/images/cat-pilot.gif"
+      <img src="/images/cat-pilot.gif"
            alt="Animation"
            style="width:80px; vertical-align:middle; margin-left:10px;">
     </p>

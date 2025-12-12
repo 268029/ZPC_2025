@@ -78,7 +78,8 @@ Níže je vidět složený mechanismus v obou krajních polohách
 		</figcaption>
 	</figure>
 
-	<figure style="text-align:center; flex:1;">
+
+<figure style="text-align:center; flex:1;">
 		<img src="../../images/miniprojekt3dvysunuty.png"
 		     alt="Vysunutý stav"
 		     style="width:100%; height:auto; border-radius:4px;" />
@@ -87,3 +88,18 @@ Níže je vidět složený mechanismus v obou krajních polohách
 		</figcaption>
 	</figure>
 </div>
+
+<figure style="text-align:center; margin:.5rem 0 1rem;">
+  <video controls
+         style="width:60%; height:auto; border-radius:6px;">
+    <source src="../../videos/3dvideo.mp4" type="video/mp4">
+    Váš prohlížeč nepodporuje přehrávání videa.
+  </video>
+
+  <figcaption style="font-size:.85rem; color:var(--muted); margin-top:.25rem;">
+    Ukázka pohybu mechanismu
+  </figcaption>
+</figure>
+
+## Nedostatky mechanismu
+Při návrhu jsem zvolil tenkou stěnu, což by samo o sobě problém nebylo, ale bylo by nutné udělat delší vedení pohyblivé části, která se díky krátkému vedení nepohybuje plynule.
