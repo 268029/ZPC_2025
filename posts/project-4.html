@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniprojekt: Kartonová sestava na laseru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b121b;
+      --card: #111a26;
+      --muted: #9bb2c9;
+      --text: #e6edf5;
+      --accent: #6ce5b1;
+      --border: #1f2a38;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: radial-gradient(120% 120% at 10% 10%, rgba(108,229,177,0.15), transparent 45%),
+                  radial-gradient(80% 80% at 80% 0%, rgba(94,164,255,0.18), transparent 40%),
+                  var(--bg);
+    }
+    main {
+      max-width: 880px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .preview { margin: 14px 0 18px 0; }
+    .preview__caption { margin: 8px 0 0 0; color: var(--muted); font-size: 14px; }
+    .back {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.04);
+    }
+    h1 { margin: 12px 0 8px 0; }
+    .meta { color: var(--muted); margin: 0 0 20px 0; }
+    section { margin: 18px 0; }
+    p { color: var(--muted); line-height: 1.6; }
+    ul { color: var(--muted); }
+    img, video { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+    figure { text-align: center; margin: .5rem 0 1rem; }
+    figcaption { font-size: .9rem; color: var(--muted); margin-top: .25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">← Back</a>
+
+    <h1>Miniprojekt: Kartonová sestava na laseru</h1>
+    <p class="meta">Laser cutter · Karton · 2024</p>
+
+    <div class="preview">
+      <img src="../static/images/laserminiprojekt.jpg" alt="Kartonový model z laseru">
+      <p class="preview__caption">Jednoduchý kartonový model letadla řezaný laserem bez lepidla</p>
+    </div>
+
+    <section>
+      <h2>Zadání</h2>
+      <p>Úkolem bylo vytvořit sestavu z kartonu na laserové řezačce ve StrojLabu bez použití lepidla či jiných adhezivních prvků. Spoje tedy musely být řešeny čistě pomocí vyřezaných zámků.</p>
+      <p>Mým návrhem bylo jednoduché kartonové letadlo ve formě "těžítka" – statická ukázka, nikoli letuschopný model.</p>
+    </section>
+
+    <section>
+      <h2>Model a podklady</h2>
+      <figure>
+        <img src="../static/images/laserminiprojekt.jpg" alt="Model v Autodesk AutoCAD" style="width:50%; height:auto;">
+        <figcaption>Model vytvořený v Autodesk AutoCAD</figcaption>
+      </figure>
+      <p>Po dokončení podkladů pro laser jsem připravil výrobu jednotlivých dílů.</p>
+    </section>
+
+    <section>
+      <h2>Vyřezané díly</h2>
+      <figure>
+        <img src="../static/images/kartonkarton.jpg" alt="Vyřezané díly z kartonu" style="width:35%; height:auto;">
+        <figcaption>Vyřezané díly z kartonu</figcaption>
+      </figure>
+      <p>Díly jsou připravené ke skládání, spoje využívají zámky a přesahy.</p>
+    </section>
+
+    <section>
+      <h2>Sestavení</h2>
+      <p>Skládání probíhalo jako "skládačka" – díly do sebe zapadly pomocí zámků a uložení s přesahem.</p>
+      <figure>
+        <img src="../static/images/kartonletadlo.jpg" alt="Sestavené kartonové letadlo" style="width:35%; height:auto;">
+        <figcaption>Sestavené letadlo</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Návaznost na hlavní projekt</h2>
+      <p>Laserové řezání bylo nejpoužívanější technologií při výrobě dílů hlavního projektu. Na laseru jsem vyráběl profily, nosníky i stěny.</p>
+      <figure>
+        <img src="../static/images/laser.jpg" alt="Vyřezané díly z laserové řezačky" style="width:50%; height:auto;">
+        <figcaption>Vyřezané díly z laserové řezačky</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>

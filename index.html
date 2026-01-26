@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="nav-panel" aria-label="Project navigation">
+    <!-- Slide-out navigation listing projects -->
+    <button class="nav-toggle" aria-expanded="false" aria-controls="project-nav">Projects</button>
+    <nav id="project-nav" class="nav-drawer" hidden>
+      <p class="nav-label">Projects</p>
+      <ul>
+        <li><a href="#project-1">Project 1</a></li>
+        <li><a href="#project-2">Project 2</a></li>
+        <li><a href="#project-3">Project 3</a></li>
+        <li><a href="#project-4">Project 4</a></li>
+        <li><a href="#project-5">Project 5</a></li>
+        <li><a href="#project-6">Project 6</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <header class="hero">
+    <!-- Centered site title for quick edits -->
+    <div class="hero__content">
+      <p class="eyebrow">Jan Káfoněk</p>
+      <h1 class="hero__title">Jak vyrobit téměř cokoliv</h1>
+      <p class="hero__subtitle">Jsem student Fakulty strojního inženýrství VUT v Brně a studuji druhým rokem bakalářský studijní program Konstrukční inženýrství. Dále jsem ve studentském spolku Chicken Wings zabývajícím se designem a výrobou RC letadel na mezinárodní soutěže, což mi mimo jiné pomohlo i při výběru a realizaci mé semestrální práce.</p>
+      <div class="hero__actions">
+        <img class="hero__photo" src="static/images/fotka.jpg" alt="Jan Káfoněk portrait">
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <!-- Editable project cards; replace text per project -->
+    <section id="project-1" class="project">
+      <div class="project__meta">
+        <p class="project__tag">Project 1</p>
+        <p class="project__year">2026</p>
+      </div>
+      <div class="project__preview">
+        <img src="static/images/model.jpg" alt="Project preview image">
+      </div>
+      <h2 class="project__title">Project Title One</h2>
+      <p class="project__desc">Describe what the project does, your role, and the outcome.</p>
+      <div class="project__links">
+        <a href="posts/project-1.html" class="pill">Open</a>
+      </div>
+    </section>
+
+    <section id="project-2" class="project">
+      <div class="project__meta">
+        <p class="project__tag">Project 2</p>
+        <p class="project__year">2026</p>
+      </div>
+      <div class="project__preview">
+        <img src="static/images/model.jpg" alt="Project preview image">
+      </div>
+      <h2 class="project__title">Project Title Two</h2>
+      <p class="project__desc">Describe what the project does, your role, and the outcome.</p>
+      <div class="project__links">
+        <a href="posts/project-2.html" class="pill">Open</a>
+      </div>
+    </section>
+
+    <section id="project-3" class="project">
+      <div class="project__meta">
+        <p class="project__tag">Project 3</p>
+        <p class="project__year">2026</p>
+      </div>
+      <div class="project__preview">
+        <img src="static/images/model.jpg" alt="Project preview image">
+      </div>
+      <h2 class="project__title">Project Title Three</h2>
+      <p class="project__desc">Describe what the project does, your role, and the outcome.</p>
+      <div class="project__links">
+        <a href="posts/project-3.html" class="pill">Open</a>
+      </div>
+    </section>
+
+    <section id="project-4" class="project">
+      <div class="project__meta">
+        <p class="project__tag">Project 4</p>
+        <p class="project__year">2026</p>
+      </div>
+      <div class="project__preview">
+        <img src="static/images/model.jpg" alt="Project preview image">
+      </div>
+      <h2 class="project__title">Project Title Four</h2>
+      <p class="project__desc">Describe what the project does, your role, and the outcome.</p>
+      <div class="project__links">
+        <a href="posts/project-4.html" class="pill">Open</a>
+      </div>
+    </section>
+
+    <section id="project-5" class="project">
+      <div class="project__meta">
+        <p class="project__tag">Project 5</p>
+        <p class="project__year">2026</p>
+      </div>
+      <div class="project__preview">
+        <img src="static/images/model.jpg" alt="Project preview image">
+      </div>
+      <h2 class="project__title">Project Title Five</h2>
+      <p class="project__desc">Describe what the project does, your role, and the outcome.</p>
+      <div class="project__links">
+        <a href="posts/project-5.html" class="pill">Open</a>
+      </div>
+    </section>
+
+    <section id="project-6" class="project">
+      <div class="project__meta">
+        <p class="project__tag">Project 6</p>
+        <p class="project__year">2026</p>
+      </div>
+      <div class="project__preview">
+        <img src="static/images/model.jpg" alt="Project preview image">
+      </div>
+      <h2 class="project__title">Project Title Six</h2>
+      <p class="project__desc">Describe what the project does, your role, and the outcome.</p>
+      <div class="project__links">
+        <a href="posts/project-6.html" class="pill">Open</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

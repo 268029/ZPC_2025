@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniprojekt: Plotter nálepka 39</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b121b;
+      --card: #111a26;
+      --muted: #9bb2c9;
+      --text: #e6edf5;
+      --accent: #6ce5b1;
+      --border: #1f2a38;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: radial-gradient(120% 120% at 10% 10%, rgba(108,229,177,0.15), transparent 45%),
+                  radial-gradient(80% 80% at 80% 0%, rgba(94,164,255,0.18), transparent 40%),
+                  var(--bg);
+    }
+    main {
+      max-width: 880px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .preview { margin: 14px 0 18px 0; }
+    .preview__caption { margin: 8px 0 0 0; color: var(--muted); font-size: 14px; }
+    .back {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.04);
+    }
+    h1 { margin: 12px 0 8px 0; }
+    .meta { color: var(--muted); margin: 0 0 20px 0; }
+    section { margin: 18px 0; }
+    p { color: var(--muted); line-height: 1.6; }
+    ul { color: var(--muted); }
+    img, video { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+    figure { text-align: center; margin: .5rem 0 1rem; }
+    figcaption { font-size: .9rem; color: var(--muted); margin-top: .25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">← Back</a>
+
+    <h1>Miniprojekt: Plotter nálepka 39</h1>
+    <p class="meta">Inkscape · Plotter · 2024</p>
+
+    <div class="preview">
+      <img src="../static/images/39nakres.jpg" alt="Ruční kresba">
+      <p class="preview__caption">Od ruční kresby po vyřezanou nálepku na plotteru</p>
+    </div>
+
+    <section>
+      <h2>Úkol</h2>
+      <p>Úkol spočíval ve vložení ručně kresleného obrázku do programu Inkscape, kde byl upraven do formátu vektorové grafiky, která byla následně exportována do plotteru a vyřezána.</p>
+    </section>
+
+    <section>
+      <h2>Ruční kresba</h2>
+      <p>Celý nákres jsem vytvořil tužkou a následně fixou obtáhl, zvolil jsem jednoduchý spojitý tvar.</p>
+      <figure>
+        <img src="../static/images/39nakres.jpg" alt="Ruční kresba" style="width:35%; height:auto;">
+        <figcaption>Ruční kresba</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Import do Inkscape</h2>
+      <p>Vyfocený nákres jsem naimportoval do Inkscape a upravil vektorovou grafiku tak, aby odpovídala požadovanému tvaru. Následně jsem přidal číslo 39 uprostřed nálepky, symbolizující označení letadla JAS-39.</p>
+      <figure>
+        <img src="../static/images/39vektor.jpg" alt="Vektorová grafika" style="width:35%; height:auto;">
+        <figcaption>Vektorová grafika</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Hotová nálepka</h2>
+      <p>Nálepka vyřezaná na plotteru a přenesená na přenášecí fólii.</p>
+      <figure>
+        <img src="../static/images/39hotovy.jpg" alt="Vyřezaná nálepka" style="width:35%; height:auto;">
+        <figcaption>Vyřezaná nálepka na přenášecí fólii</figcaption>
+      </figure>
+      <p>Finální umístění nálepky.</p>
+      <figure>
+        <img src="../static/images/39notebook.jpg" alt="Hotová nálepka na notebooku" style="width:35%; height:auto;">
+        <figcaption>Hotová nálepka na notebooku</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Návaznost na hlavní projekt</h2>
+      <p>I přesto, že je to možné, nezakomponoval jsem řezání na plotteru do hlavního projektu. Stále je možnost tuto technologii využít v budoucnu na polep potaženého trupu a křídel.</p>
+    </section>
+  </main>
+</body>
+</html>

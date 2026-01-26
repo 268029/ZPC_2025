@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniprojekt: Klikový mechanismus (3D tisk)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b121b;
+      --card: #111a26;
+      --muted: #9bb2c9;
+      --text: #e6edf5;
+      --accent: #6ce5b1;
+      --border: #1f2a38;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: radial-gradient(120% 120% at 10% 10%, rgba(108,229,177,0.15), transparent 45%),
+                  radial-gradient(80% 80% at 80% 0%, rgba(94,164,255,0.18), transparent 40%),
+                  var(--bg);
+    }
+    main {
+      max-width: 880px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .preview { margin: 14px 0 18px 0; }
+    .preview__caption { margin: 8px 0 0 0; color: var(--muted); font-size: 14px; }
+    .back {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.04);
+    }
+    h1 { margin: 12px 0 8px 0; }
+    .meta { color: var(--muted); margin: 0 0 20px 0; }
+    section { margin: 18px 0; }
+    p { color: var(--muted); line-height: 1.6; }
+    ul { color: var(--muted); }
+    img, video { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+    figure { text-align: center; margin: .5rem 0 1rem; }
+    figcaption { font-size: .9rem; color: var(--muted); margin-top: .25rem; }
+    .side-by-side { display: flex; gap: 1rem; justify-content: center; margin: 1rem 0; flex-wrap: wrap; }
+    .side-by-side figure { flex: 1; min-width: 240px; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">← Back</a>
+
+    <h1>Miniprojekt: Klikový mechanismus (3D tisk)</h1>
+    <p class="meta">1 DOF · Přesah & vůle · < 100 g filamentu</p>
+
+    <div class="preview">
+      <img src="../static/images/miniprojekt3dmodel.jpg" alt="Model klikového mechanismu">
+      <p class="preview__caption">Malý klikový mechanismus s otevřeným rámem, tištěný do 100 g filamentu</p>
+    </div>
+
+    <section>
+      <h2>Zadání</h2>
+      <p>Zadáním bylo vytvořit mechanismus s jedním stupněm volnosti, obsahující minimálně jedno uložení s přesahem a jedno s vůlí. Celá sestava musela spotřebovat maximálně 100 g filamentu.</p>
+      <p>Rozhodl jsem se pro malý klikový mechanismus s otevřeným rámem.</p>
+    </section>
+
+    <section>
+      <h2>Model</h2>
+      <figure>
+        <img src="../static/images/miniprojekt3dmodel.jpg" alt="Model klikového mechanismu" style="width:50%; height:auto;">
+        <figcaption>Model klikového mechanismu</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Příprava tisku</h2>
+      <p>Po vytvoření modelu v Inventoru bylo nutné jednotlivé části přenést do sliceru a správně je orientovat. Díky jednoduchosti dílů jsem nepřidával podpory; funkční otvory jsem doladil po tisku.</p>
+      <figure>
+        <img src="../static/images/miniprojekt3dslicer.jpg" alt="Části modelu ve sliceru" style="width:35%; height:auto;">
+        <figcaption>Části modelu vyskládané ve sliceru</figcaption>
+      </figure>
+      <p>Tabulka použití filamentu a času tisku na tiskárně MK4:</p>
+      <figure>
+        <img src="../static/images/miniprojekt3dcas.jpg" alt="Informace o tisku" style="width:50%; height:auto;">
+        <figcaption>Informace o tisku</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Vytištěné díly</h2>
+      <p>Hotové díly po sejmutí z podložky.</p>
+      <figure>
+        <img src="../static/images/miniprojekt3ddily.jpg" alt="Vytištěné díly mechanismu" style="width:50%; height:auto;">
+        <figcaption>Vytištěné díly mechanismu</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Složený mechanismus</h2>
+      <p>Mechanismus v obou krajních polohách:</p>
+      <div class="side-by-side">
+        <figure>
+          <img src="../static/images/miniprojekt3dzasunuty.png" alt="Zasunutý stav">
+          <figcaption>Zasunutý stav</figcaption>
+        </figure>
+        <figure>
+          <img src="../static/images/miniprojekt3dvysunuty.png" alt="Vysunutý stav">
+          <figcaption>Vysunutý stav</figcaption>
+        </figure>
+      </div>
+      <figure>
+        <video controls style="width:60%; height:auto; border-radius:6px; border: 1px solid var(--border);">
+          <source src="../static/videos/3dvideo.mp4" type="video/mp4">
+          Váš prohlížeč nepodporuje přehrávání videa.
+        </video>
+        <figcaption>Ukázka pohybu mechanismu</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Nedostatky mechanismu</h2>
+      <p>Zvolená tenká stěna by sama o sobě nevadila, ale krátké vedení pohyblivé části způsobuje méně plynulý pohyb; delší vedení by zlepšilo stabilitu.</p>
+    </section>
+
+    <section>
+      <h2>Návaznost na hlavní projekt</h2>
+      <p>3D tisk byl využit i v hlavním projektu – 3D tištěné části slouží jako přechody mezi částmi letadla, materiálem byl filament PP.</p>
+      <figure>
+        <img src="../static/images/3Dtiskdily.jpg" alt="3D-tištěné součásti na hlavní projekt" style="width:50%; height:auto;">
+        <figcaption>3D-tištěné součásti na hlavní projekt</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>

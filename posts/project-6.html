@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniprojekt: 3D skenování telefonu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b121b;
+      --card: #111a26;
+      --muted: #9bb2c9;
+      --text: #e6edf5;
+      --accent: #6ce5b1;
+      --border: #1f2a38;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: radial-gradient(120% 120% at 10% 10%, rgba(108,229,177,0.15), transparent 45%),
+                  radial-gradient(80% 80% at 80% 0%, rgba(94,164,255,0.18), transparent 40%),
+                  var(--bg);
+    }
+    main {
+      max-width: 880px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .preview { margin: 14px 0 18px 0; }
+    .preview__caption { margin: 8px 0 0 0; color: var(--muted); font-size: 14px; }
+    .back {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.04);
+    }
+    h1 { margin: 12px 0 8px 0; }
+    .meta { color: var(--muted); margin: 0 0 20px 0; }
+    section { margin: 18px 0; }
+    p { color: var(--muted); line-height: 1.6; }
+    ul { color: var(--muted); }
+    img, video { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+    figure { text-align: center; margin: .5rem 0 1rem; }
+    figcaption { font-size: .9rem; color: var(--muted); margin-top: .25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">← Back</a>
+
+    <h1>Miniprojekt: 3D skenování telefonu</h1>
+    <p class="meta">SIMSCAN · GOM Inspect · 2024</p>
+
+    <div class="preview">
+      <img src="../static/images/telefon.jpg" alt="Telefon připravený ke skenování">
+      <p class="preview__caption">Skenování starého telefonu, zpracování a měření v GOM Inspect</p>
+    </div>
+
+    <section>
+      <h2>Zadání</h2>
+      <p>Zadáním bylo naskenovat starý telefon a v programu GOM Inspect model upravit a změřit: povrch, maximální rozměr a libovolný rozměr. Skenování proběhlo na zařízení SIMSCAN.</p>
+    </section>
+
+    <section>
+      <h2>Příprava objektu</h2>
+      <figure>
+        <img src="../static/images/telefon.jpg" alt="Zadaný telefon" style="width:35%; height:auto;">
+        <figcaption>Zadaný objekt ke skenování</figcaption>
+      </figure>
+      <p>Pro úspěšný sken bylo nutné nalepit referenční body.</p>
+      <figure>
+        <img src="../static/images/telefonbody.jpg" alt="Telefon s referenčními body" style="width:35%; height:auto;">
+        <figcaption>Nachystaný telefon ke skenu</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Skenování</h2>
+      <figure>
+        <img src="../static/images/prubehskenovani.jpg" alt="Průběh skenování" style="width:35%; height:auto;">
+        <figcaption>Průběh skenování</figcaption>
+      </figure>
+      <p>Po naskenování obou stran bylo nutné skeny sloučit a odstranit anomálie.</p>
+      <figure>
+        <img src="../static/images/finalniupravysken.jpg" alt="Finální úpravy modelu" style="width:35%; height:auto;">
+        <figcaption>Finální úpravy modelu ve skenovacím softwaru</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>GOM Inspect</h2>
+      <p>Model byl exportován do STL a dále zpracován v GOM Inspect.</p>
+      <figure>
+        <img src="../static/images/gomscan.jpg" alt="Model v GOM Inspect" style="width:50%; height:auto;">
+        <figcaption>Upravený model v GOM Inspect</figcaption>
+      </figure>
+      <p>Naměřené hodnoty:</p>
+      <ul>
+        <li><strong>Max. rozměr:</strong> 236,55 mm</li>
+        <li><strong>Délka displeje:</strong> 59,43 mm</li>
+        <li><strong>Celkový povrch:</strong> 90 888 mm²</li>
+      </ul>
+      <figure>
+        <img src="../static/images/telefonvzdalenosti.jpg" alt="Měření v GOM Inspect" style="width:50%; height:auto;">
+        <figcaption>Štítky s hodnotami vzdáleností v GOM Inspect</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Návaznost na hlavní projekt</h2>
+      <p>Skenování nebylo v hlavním projektu použito, ale může sloužit jako pomocný nástroj pro náhradu poškozených dílů – skenerem získat geometrii a následně díly vytisknout.</p>
+    </section>
+  </main>
+</body>
+</html>

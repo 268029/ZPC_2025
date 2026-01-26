@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Simple, editable styling for individual project pages */
+    :root {
+      --bg: #0b121b;
+      --card: #111a26;
+      --muted: #9bb2c9;
+      --text: #e6edf5;
+      --accent: #6ce5b1;
+      --border: #1f2a38;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: radial-gradient(120% 120% at 10% 10%, rgba(108,229,177,0.15), transparent 45%),
+                  radial-gradient(80% 80% at 80% 0%, rgba(94,164,255,0.18), transparent 40%),
+                  var(--bg);
+    }
+    main {
+      max-width: 880px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .preview {
+      margin: 14px 0 18px 0;
+    }
+    .preview__caption {
+      margin: 8px 0 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .back {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.04);
+    }
+    h1 { margin: 12px 0 8px 0; }
+    .meta { color: var(--muted); margin: 0 0 20px 0; }
+    .pill {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #5ea4ff);
+      color: #0b121b;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
+    section { margin: 18px 0; }
+    p { color: var(--muted); line-height: 1.6; }
+    ul { color: var(--muted); }
+    img, video { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+    pre { background: #0d1621; padding: 12px; border-radius: 12px; overflow: auto; border: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Back to main portfolio -->
+    <a class="back" href="../index.html">← Back</a>
+
+    <!-- Hero / title area for this project -->
+    <h1>Project 1 Title</h1>
+    <p class="meta">Role · Stack · Year</p>
+    <div class="preview">
+      <!-- Small preview image; replace src with your real thumbnail -->
+      <img src="../static/images/model.jpg" alt="Project preview image">
+      <p class="preview__caption">Swap this image and caption for a quick project teaser.</p>
+    </div>
+    <a class="pill" href="#live-demo" target="_blank" rel="noopener">Open live experience</a>
+
+    <section>
+      <h2>Popis semestrální práce</h2>
+      <p>Semestrální práce spočívá v návrhu a výrobě RC letadla pro výcvik na jiná letadla.</p>
+    </section>
+
+    <section>
+      <h2>Časový plán</h2>
+      <ul>
+        <li><strong>22.09.–28.09.</strong> Pochopení programu XFLR5 a vytvoření základního modelu</li>
+        <li><strong>29.09.–05.10.</strong> Získání veškerých podkladů ke zjištění rozměrů ocasních a kontrolních ploch</li>
+        <li><strong>06.10.–12.10.</strong> Iterace modelu v XFLR5, výpočet stability</li>
+        <li><strong>13.10.–19.10.</strong> Vytvoření 3D modelu letadla</li>
+        <li><strong>20.10.–26.10.</strong> Vytvoření souborů pro výrobu (3D tisk/laserové řezání)</li>
+        <li><strong>27.10.–02.11.</strong> Nákup a výroba potřebných dílů</li>
+        <li><strong>03.11.–09.11.</strong> Výroba dílů</li>
+        <li><strong>10.11.–16.11.</strong> Sestavení konstrukce</li>
+        <li><strong>17.11.–23.11.</strong> Instalace elektroniky</li>
+        <li><strong>24.11.–30.11.</strong> Prostor pro řešení problémů/odladění</li>
+        <li><strong>01.12.–07.12.</strong> Prostor pro řešení problémů/odladění</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Průběh práce</h2>
+
+      <h3>22.09.–28.09. – Pochopení programu XFLR5 a vytvoření základního modelu</h3>
+      <p><strong>Plán:</strong> Pochopení principů programu XFLR5, vytvoření základního modelu pro analýzu aerodynamiky.</p>
+      <p><strong>Skutečně provedeno:</strong> Vytvořil jsem prvotní model s profilem NACA 2415 a rozpětím 1000 mm jako základ, který budu iterovat. Rozpětí jsem volil dle předešlých zkušeností v týmu Chicken Wings jako kompromis mezi letovými vlastnostmi a náročností výroby. Profil NACA 2415 jsem volil po rešerši a jedná se o běžně využívaný profil pro RC letadla. Dále jsem vytvořil tabulku s výpočty pro potřebnou rychlost ke vzletu.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/xflr3.jpg" alt="Trup modelu" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Modul pro výběr profilu v XFLR</figcaption>
+      </figure>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/clalpha.jpg" alt="Ruční kresba" title="Ruční kresba" style="width:35%; height:auto; border-radius:4px;">
+        <figcaption style="font-size:.85rem; color:var(--muted); margin-top:.25rem;">Výpočet Cl pro jednotlivé profily a Reynoldsova čísla</figcaption>
+      </figure>
+
+      <h3>29.09.–05.10. – Získání podkladů pro rozměry ocasních a kontrolních ploch</h3>
+      <p><strong>Plán:</strong> Získání všech potřebných údajů k určení rozměrů ocasních a kontrolních ploch.</p>
+      <p><strong>Skutečně provedeno:</strong> Po zjištění, že budu potřebovat hmotnosti jednotlivých komponent v softwaru XFLR5, jsem začal modelovat křídlo v programu Autodesk Inventor. Rozpětí křídla jsem navýšil na 1,5 m pro lepší letové vlastnosti na základě výpočtu vzletové rychlosti. Po konzultaci se studenty leteckého ústavu jsem se vrátil ke koncepčnímu návrhu s optimálním postupem a novými výpočty plochy křídla.</p>
+      <p>Odhady a požadavky:</p>
+      <ul>
+        <li>Pádová rychlost 8 m/s</li>
+        <li>Vzletová váha 1,5 kg</li>
+        <li>Odhadované Clmax 1,25</li>
+      </ul>
+      <p>Došel jsem k závěru, že ideální plocha křídla je cca 0,3 m²; kvůli rezervě jsem zvolil větší plochu. Rozpětí 1,5 m vedlo k délce tětivy 0,22 m. Pro analýzu jsem použil profily NACA 2415 (křídlo) a NACA 0014 (ocasní plochy) a provedl „ofouknutí“ profilů, hledání optimálního úhlu náběhu a balancování klopivého momentu.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/xflr2.jpg" alt="Poláry v programu XFLR" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Poláry v programu XFLR</figcaption>
+      </figure>
+
+      <h3>06.10.–12.10. – Iterace modelu v XFLR5, výpočet stability</h3>
+      <p><strong>Plán:</strong> Provést úpravy a iterace modelu v XFLR5, vypočítat statickou a dynamickou stabilitu.</p>
+      <p><strong>Skutečně provedeno:</strong> Upřesnil jsem hmotnosti pro výpočet stability, proto bylo nutné vytvořit 3D model dříve pro přesnější odhad hmotnosti. Klíčovým grafem byl klopivý moment vůči úhlu náběhu.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/xflr.jpg" alt="Model v programu XFLR" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Model v programu XFLR</figcaption>
+      </figure>
+
+      <h3>13.10.–19.10. – Vytvoření 3D modelu letadla</h3>
+      <p><strong>Plán:</strong> Zpracování kompletního 3D modelu letadla podle výsledků z XFLR5.</p>
+      <p><strong>Skutečně provedeno:</strong> Dokončil jsem finální 3D model z 1,5 mm letecké překližky, 3 mm balsy, uhlíkových trubek a 3D tištěných přechodů.</p>
+      <p><strong>Technické specifikace modelu:</strong></p>
+      <ul>
+        <li>Váha: 1,5 kg</li>
+        <li>Délka vrtule–ocas: 1,25 m</li>
+        <li>Rozpětí křídla: 1,5 m</li>
+      </ul>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/model.jpg" alt="Model letadla v Autodesk Inventor" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Model letadla v Autodesk Inventor</figcaption>
+      </figure>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/modelkridlo.jpg" alt="Křídlo modelu" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Křídlo modelu</figcaption>
+      </figure>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/modelocas.jpg" alt="Ocas modelu" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Ocas modelu</figcaption>
+      </figure>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/modeltrup.jpg" alt="Trup modelu" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Trup modelu</figcaption>
+      </figure>
+
+      <h3>20.10.–26.10. – Příprava výrobní dokumentace</h3>
+      <p><strong>Plán:</strong> Vytvoření souborů pro výrobu – 3D tisk a laserové řezání.</p>
+      <p><strong>Skutečně provedeno:</strong> Připravil jsem podklady pro laser na vyřezání dílů z balsy a překližky; G-kód pro 3D tisk přechodů motor–trup a ocas–trup byl přesunut na další týden.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/laserlayout.jpg" alt="Podklady pro laser" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Podklady pro laser vytvořené v Autodesk AutoCAD</figcaption>
+      </figure>
+
+      <h3>27.10.–02.11. – Nákup a výroba potřebných dílů</h3>
+      <p><strong>Plán:</strong> Zajištění všech komponent a zahájení výroby jednotlivých částí.</p>
+      <p><strong>Skutečně provedeno:</strong> Díky záznamům v excelové tabulce šla objednávka komponent snadno.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/excelceny.jpg" alt="Tabulka objednávaných dílů" style="width:30%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Tabulka objednávaných dílů</figcaption>
+      </figure>
+
+      <h3>03.11.–09.11. – Výroba dílů</h3>
+      <p><strong>Plán:</strong> Dokončení výroby všech dílů pro sestavení konstrukce.</p>
+      <p><strong>Skutečně provedeno:</strong> První série dílů byla vyrobena podle plánu, ale další díly se kvůli jiným povinnostem opozdily.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/3Dtiskdily.jpg" alt="Vytištěné 3D díly" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Vytištěné 3D díly</figcaption>
+      </figure>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/laser.jpg" alt="Vypálené součásti z laseru" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Vypálené součásti z laseru</figcaption>
+      </figure>
+
+      <h3>10.11.–16.11. – Sestavení konstrukce</h3>
+      <p><strong>Plán:</strong> Montáž konstrukčních částí do celku.</p>
+      <p><strong>Skutečně provedeno:</strong> Kvůli zdržení s filamentem byla konstrukce sestavena po částech (trup, křídlo, ocas) a finální spojení bylo odloženo o tři týdny.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/kridlo.jpg" alt="Sestavená konstrukce křídla" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Sestavená konstrukce křídla</figcaption>
+      </figure>
+
+      <h3>17.11.–23.11. – Instalace elektroniky</h3>
+      <p><strong>Plán:</strong> Instalace serv, pohonného systému a elektroniky řízení.</p>
+      <p><strong>Skutečně provedeno:</strong> Napájel jsem ESC k motoru, konektory a připravil servomotory. Tvar 3D tištěných částí byl zvolen pro pevnost, elektronika se jim musela přizpůsobit. Serva byla spojena závitovou tyčí v koncovkách, běžným konstrukčním řešením v RC letadlech.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/elektro.jpg" alt="Zapojený okruh po pájení" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Zapojený okruh po pájení</figcaption>
+      </figure>
+
+      <h3>24.11.–30.11. – Odladění a řešení problémů</h3>
+      <p><strong>Plán:</strong> Testování, opravy a dolaďování případných problémů.</p>
+      <p><strong>Skutečně provedeno:</strong> Práce pozastavena z důvodu posunutí termínu.</p>
+
+      <h3>01.12.–07.12. – Závěrečné ladění a rezervní čas</h3>
+      <p><strong>Plán:</strong> Finální úpravy, příprava k testovacímu letu, časová rezerva.</p>
+      <p><strong>Skutečně provedeno:</strong> Práce pozastavena z důvodu posunutí termínu.</p>
+
+      <h3>Práce po původním termínu</h3>
+      <p><strong>Potah:</strong> Kostru letadla jsem potáhl fólií Kavan. Fólii je nutné nejprve uchytit na nižší teplotu (90–110 °C) a poté ji napnout vyšší teplotou (110–140 °C), aby se odstranilo zvlnění.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/letadlo1.jpg" alt="Kostra letadla s podvozkem" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Kostra letadla s podvozkem z plechu</figcaption>
+      </figure>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/potahovani.jpg" alt="Práce na potahování letadla" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Práce na potahování letadla</figcaption>
+      </figure>
+
+      <p><strong>Podvozek:</strong> Provizorní podvozek z pozinkovaného plechu vážil 250 g, což je příliš. Objednal jsem duralový plech a vyrobil lehčí podvozek stejným způsobem.</p>
+      <figure style="text-align:center; margin:.5rem 0 1rem;">
+        <img src="../static/images/letadlo2.jpg" alt="Potažené letadlo" style="width:50%; height:auto; border-radius:6px;">
+        <figcaption style="font-size:.9rem; color:var(--muted); margin-top:.25rem;">Potažené letadlo bez podvozku</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>

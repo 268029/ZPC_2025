@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniprojekt: Semafor v Tinkercadu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Jednoduchy styl pro samostatnou stranku projektu */
+    :root {
+      --bg: #0b121b;
+      --card: #111a26;
+      --muted: #9bb2c9;
+      --text: #e6edf5;
+      --accent: #6ce5b1;
+      --border: #1f2a38;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: radial-gradient(120% 120% at 10% 10%, rgba(108,229,177,0.15), transparent 45%),
+                  radial-gradient(80% 80% at 80% 0%, rgba(94,164,255,0.18), transparent 40%),
+                  var(--bg);
+    }
+    main {
+      max-width: 880px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .preview { margin: 14px 0 18px 0; }
+    .preview__caption { margin: 8px 0 0 0; color: var(--muted); font-size: 14px; }
+    .back {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.04);
+    }
+    h1 { margin: 12px 0 8px 0; }
+    .meta { color: var(--muted); margin: 0 0 20px 0; }
+    .pill {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #5ea4ff);
+      color: #0b121b;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
+    section { margin: 18px 0; }
+    p { color: var(--muted); line-height: 1.6; }
+    ul { color: var(--muted); }
+    img, video { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+    pre { background: #0d1621; padding: 12px; border-radius: 12px; overflow: auto; border: 1px solid var(--border); }
+    figure { text-align: center; margin: .5rem 0 1rem; }
+    figcaption { font-size: .9rem; color: var(--muted); margin-top: .25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">← Back</a>
+
+    <h1>Miniprojekt: Semafor v Tinkercadu</h1>
+    <p class="meta">Arduino UNO · Tinkercad · 2024</p>
+
+    <div class="preview">
+      <img src="../static/images/elektroschema.jpg" alt="Schéma obvodu">
+      <p class="preview__caption">Simulace semaforu u přechodu pro chodce</p>
+    </div>
+    <a class="pill" href="https://www.tinkercad.com/things/4KhDr1TIdG7-miniprojekt/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fall&sharecode=LFGar4VT6F6jQ8HszpLmBcpw6cP_nLZAX2nXdheZUmk" target="_blank" rel="noopener">Otevřít simulaci v Tinkercadu</a>
+
+    <section>
+      <h2>Popis</h2>
+      <p>Úkolem bylo vytvořit buď fyzický obvod, nebo simulaci v Tinkercadu s použitím Arduino UNO. Připravil jsem simulaci semaforu pro přechod pro chodce.</p>
+      <p>Řídíme dva semafory současně: silniční (3 žárovky) a pěší (2 žárovky). V běžném provozu svítí zelená pro auta a červená pro chodce; po stisknutí tlačítka chceme opačný stav, ale s prodlevou pro bezpečné dokončení přechodu.</p>
+      <figure>
+        <img src="../static/images/elektroschema.jpg" alt="Schéma obvodu" style="width:50%; height:auto;">
+        <figcaption>Schéma obvodu</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Kód</h2>
+      <p>Program byl tvořen pomocí bloků (pro rychlou čitelnost pro začátečníky); níže je export i textová podoba.</p>
+      <figure>
+        <img src="../static/images/elektrokod.jpg" alt="Kód obvodu (bloky)" style="width:50%; height:auto;">
+        <figcaption>Kód obvodu (bloky)</figcaption>
+      </figure>
+      <figure>
+        <img src="../static/images/elektrokod2.jpg" alt="Kód obvodu textově" style="width:100%; height:auto;">
+        <figcaption>Obvod s kódem v klasické podobě</figcaption>
+      </figure>
+      <pre>// C++ code
+
+int Aktivace = 0;
+
+void setup()
+{
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(2, INPUT);
+
+  digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  // Nastavení auta zelená, chodci červená
+}
+
+void loop()
+{
+  if (Aktivace == 1) {
+    // Prodleva pro chodce
+    delay(3000); // Wait for 3000 millisecond(s)
+    digitalWrite(3, LOW);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, HIGH);
+    // Auta zastavují
+    delay(2000); // Wait for 2000 millisecond(s)
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, LOW);
+    // Chodci přechází
+    delay(5000); // Wait for 5000 millisecond(s)
+    digitalWrite(3, LOW);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, HIGH);
+    // Auta se rozjíždějí
+    delay(2000); // Wait for 2000 millisecond(s)
+    Aktivace = 0;
+  } else {
+    // Auta jezdí
+    digitalWrite(3, HIGH);
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, HIGH);
+  }
+
+  if (digitalRead(2) == 1) {
+    Aktivace = 1;
+  }
+  // Aktivace přechodu
+}
+</pre>
+    </section>
+
+    <section>
+      <h2>Odkaz</h2>
+      <p><a href="https://www.tinkercad.com/things/4KhDr1TIdG7-miniprojekt/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fall&sharecode=LFGar4VT6F6jQ8HszpLmBcpw6cP_nLZAX2nXdheZUmk" target="_blank" rel="noopener">Tinkercad simulace semaforu</a></p>
+    </section>
+
+    <section>
+      <h2>Návaznost na hlavní projekt</h2>
+      <p>I když hlavní projekt obsahuje elektroniku, Arduino programování nebylo přímo použito. Elektronická část se soustředila na zapojení okruhu Baterie–Vysílač–ESC–Motor a na zapojení a kalibraci servomotorů.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Simple, neutral styles for the portfolio */
+:root{
+  --bg:#f2f2f2;              /* ← LIGHT GREY BACKGROUND */
+  --text:#1a1a1a;
+  --muted:#666;
+  --accent:#0b74de;
+  --max-width:900px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:var(--text);
+  background:var(--bg);
+  margin:0;
+  line-height:1.5
+}
+
+/* content wrapper stays transparent so grey shows through */
+.wrap{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:2rem
+}
+
+.site-header{border-bottom:1px solid #ddd; background:#fff}
+.header-inner{display:flex; align-items:center; justify-content:space-between}
+.site-title a{font-weight:700; color:var(--text); text-decoration:none}
+.main-nav ul{list-style:none; margin:0; padding:0; display:flex; gap:1rem}
+.main-nav a{color:var(--muted); text-decoration:none}
+.main-nav a.active, .main-nav a:hover{color:var(--accent)}
+
+/* hero slightly darker than background */
+.hero{background:#eaeaea; padding:3rem 0}
+
+.projects .project-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem
+}
+
+/* cards stay white */
+.project-item{
+  border:1px solid #ddd;
+  padding:1rem;
+  border-radius:6px;
+  background:#fff
+}
+
+.project-item h3{margin:0 0 .25rem}
+.project-item p{margin:0; color:var(--muted)}
+.post-header h1{margin-top:0}
+
+.site-footer{
+  border-top:1px solid #ddd;
+  padding:1rem 0;
+  color:var(--muted);
+  background:#fff
+}
+
+@media (max-width:600px){
+  .header-inner{flex-direction:column; align-items:flex-start}
+}
+
+/* Featured project styles */
+.featured { margin: 2rem 0; }
+
+.featured-project{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  align-items:center;
+  justify-content:center;
+  padding:1.25rem 1rem;
+  border:2px solid var(--accent);
+  background:#fff;          /* stays white for contrast */
+  border-radius:8px;
+  text-align:center;
+}
+
+.featured-image{
+  width:180px;
+  max-width:60%;
+  height:auto;
+  border-radius:6px;
+  flex-shrink:0
+}
+
+.featured-content h3{margin:0 0 .5rem}
+.featured-content p{margin:0; color:var(--muted)}
+
+@media (min-width:900px){
+  .featured-image{width:220px}
+}
