@@ -81,7 +81,6 @@
     <a class="back" href="../index.html">← Back</a>
 
     <h1>Miniprojekt: Semafor v Tinkercadu</h1>
-    <p class="meta">Arduino UNO · Tinkercad · 2024</p>
 
     <div class="preview">
       <img src="../static/images/elektroschema.jpg" alt="Schéma obvodu">
@@ -91,8 +90,13 @@
 
     <section>
       <h2>Popis</h2>
-      <p>Úkolem bylo vytvořit buď fyzický obvod, nebo simulaci v Tinkercadu s použitím Arduino UNO. Připravil jsem simulaci semaforu pro přechod pro chodce.</p>
-      <p>Řídíme dva semafory současně: silniční (3 žárovky) a pěší (2 žárovky). V běžném provozu svítí zelená pro auta a červená pro chodce; po stisknutí tlačítka chceme opačný stav, ale s prodlevou pro bezpečné dokončení přechodu.</p>
+      <p>Simulace řídí dva semafory současně:</p>
+      <ul>
+        <li>silniční semafor (tři světla – červená, oranžová, zelená),</li>
+        <li>semafor pro chodce (dvě světla – červená a zelená).</li>
+      </ul>
+      <p>V základním stavu je provoz nastaven tak, že vozidlům svítí zelená a chodcům červená.</p>
+      <p>Po stisknutí tlačítka dojde k aktivaci přechodu pro chodce. Přepnutí stavů probíhá s časovou prodlevou, která umožňuje bezpečné zastavení vozidel a následné dokončení přechodu chodci.</p>
       <figure>
         <img src="../static/images/elektroschema.jpg" alt="Schéma obvodu" style="width:50%; height:auto;">
         <figcaption>Schéma obvodu</figcaption>
